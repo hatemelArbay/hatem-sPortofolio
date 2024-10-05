@@ -24,6 +24,7 @@ arabytour,
 oneHealth,
 BurgularSystem,
 beqala,
+elGounaLuxury,
 
 
   coverhunt,
@@ -133,11 +134,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Full-Stack (Intern)',
-    company_name: 'OGtech',
+    title: 'Backend Developer',
+    company_name: 'microsystems',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Jul 2023 - AUG 2023',
+    date: 'JUL 2024 - OCT 2024',
+  },
+  {
+    title: 'Full-stack (Freelance)',
+    company_name: 'ElGonaLuxuryRentals',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'AUG 2024 - Oct 2024',
   },
   {
     title: 'Front-End (Freelance)',
@@ -154,9 +162,40 @@ const experiences = [
     date: 'Jan 2024 - Mar 2024',
   },
 
+  {
+    title: 'Full-Stack (Intern)',
+    company_name: 'OGtech',
+    icon: coverhunt,
+    iconBg: '#333333',
+    date: 'Jul 2023 - AUG 2023',
+  },
+  
 ];
 
 const projects = [
+  {
+    id: 'project-6',
+    name: 'GonaLuxury',
+    description:
+      'I developed the El Gouna Luxury Real Estate website using the MERN stack (MongoDB, Express, React, Node.js). The platform enables users to book appointments for renting or purchasing properties in El Gouna and includes an admin dashboard for efficient management.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: elGounaLuxury,
+    repo: 'https://github.com/hatemelArbay/ElgonaLuxaryFullStack/tree/main',
+    demo: 'https://luxuryelgounarealestate.com/',
+  },
   {
     id: 'project-1',
     name: 'Sobhy Saied',
@@ -200,7 +239,7 @@ const projects = [
     ],
     image: arabytour,
     repo: 'https://github.com/hatemelArbay/arabytour',
-    demo: 'https://www.arabytour.com/',
+    demo: 'https://hatemelarbay.github.io/arabytour/',
   },
   {
     id: 'project-3',
@@ -269,6 +308,8 @@ const projects = [
     repo: 'https://github.com/hatemelArbay/theBeqala',
     demo: 'https://vimeo.com/961284411?share=copy',
   },
+  
+  
 
 
 

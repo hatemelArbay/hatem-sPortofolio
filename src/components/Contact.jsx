@@ -5,8 +5,9 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
-
+import {message} from "antd";
 const Contact = () => {
+  
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -77,13 +78,14 @@ const Contact = () => {
           from_email: form.email,
           to_email: 'hatemel3arby@gmail.com', //put your email here.
           message: form.message,
+          
         },
         '1rFD7BTHsMcRJ7Nqn' //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+          message.success('Thank you. I will get back to you as soon as possible.');
 
           setForm({
             name: '',
@@ -94,7 +96,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.log(error);
-          alert('Something went wrong. Please try again.');
+          message.error('Something went wrong. Please try again.');
         }
       );
   };

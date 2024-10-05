@@ -3,7 +3,7 @@ import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
 
-import logo from './logo/logo-black.png';
+import logo from './logo/logo.png';
 import logotext from './logo/logo-text-black.png';
 
 import shaq from './personal/shaq.png';
@@ -55,6 +55,7 @@ import arabytour from './projects/arabyTour.png';
 import oneHealth from './projects/oneHealth.png'; 
 import BurgularSystem from './projects/burgularsystem.png'; 
 import beqala from './projects/beqala.png'; 
+import elGounaLuxury from './projects/elGounaLuxury.png'; 
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -105,6 +106,7 @@ export {
   oneHealth,
   BurgularSystem,
   beqala,
+  elGounaLuxury,
   
   git,
   html,

@@ -22,7 +22,7 @@ const ProjectCard = ({
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className={`relative ${
         active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
-      } flex items-center justify-center min-w-[170px] h-[420px] cursor-pointer card-shadow`}
+      } flex items-center justify-center min-w-[170px] h-[600px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}
     >
       <div className="absolute top-0 left-0 z-10 bg-jetLight h-full w-full opacity-[0.5] rounded-[24px]"></div>
@@ -44,7 +44,7 @@ const ProjectCard = ({
       ) : (
         <>
           <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
-            <div className="absolute inset-0 flex justify-end m-3">
+            <div className="absolute inset-0 flex justify-end m-1">
               <div
                 onClick={() => window.open(repo, '_blank')}
                 className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer sm:opacity-[0.9] opacity-[0.8]"
@@ -83,6 +83,7 @@ const Projects = () => {
   const [active, setActive] = useState('project-2');
 
   return (
+    <div>
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Case Studies</p>
@@ -95,13 +96,16 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <motion.div
+    </div>
+    <div>
+    <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-wrap gap-5`}
+        className={`${styles.innerWidth} mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pt-5`}
       >
+        
         {projects.map((project, index) => (
           <ProjectCard key={project.id} index={index} {...project} active={active} handleClick={setActive} />
         ))}
@@ -111,6 +115,7 @@ const Projects = () => {
 
 
       </motion.div>
+      </div>
     </div>
   );
 };

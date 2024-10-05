@@ -23,7 +23,7 @@ const Navbar = () => {
           <img
             src={logo} // your logo comes here
             alt="logo"
-            className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
+            className="sm:w-[50px] sm:h-[50px] w-[100px] h-[100px] object-contain"
           />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
@@ -41,50 +41,55 @@ const Navbar = () => {
         </ul>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
-          {toggle ? (
-            <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
-                  toggle ? 'menu-open' : 'menu-close'
-                }`}>
-              <div className="flex justify-end">
-                <img
-                  src={close}
-                  alt="close"
-                  className="w-[22px] h-[22px] object-contain cursor-pointer"
-                  onClick={() => setToggle(!toggle)}
-                />
-              </div>
-              <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
-                {navLinks.map((nav) => (
-                  <li
-                    id={nav.id}
-                    key={nav.id}
-                    className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}>
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : (
-            <img
-              src={menu}
-              alt="menu"
-              className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
-            />
-          )}
-        </div>
+        <div className="sm:hidden flex w-full justify-end items-center">
+  {/* Toggle button for menu */}
+  <img
+    src={menu}
+    alt="menu"
+    className="w-[34px] h-[34px] object-contain cursor-pointer"
+    onClick={() => setToggle(!toggle)}
+  />
+  
+  {toggle && (
+    <div
+      className="fixed inset-0 bg-flashWhite opacity-[0.98] z-10 flex flex-col justify-center items-center transition-transform duration-300 ease-in-out"
+    >
+      {/* Close button */}
+      <div className="absolute top-6 right-6">
+        <img
+          src={close}
+          alt="close"
+          className="w-[24px] h-[24px] object-contain cursor-pointer"
+          onClick={() => setToggle(false)}
+        />
+      </div>
+
+      {/* Navigation Links */}
+      <ul className="list-none flex flex-col items-center justify-center space-y-6">
+        {navLinks.map((nav) => (
+          <li
+            id={nav.id}
+            key={nav.id}
+            className={`${
+              active === nav.title ? 'text-french' : 'text-eerieBlack'
+            } text-[12px] font-bold font-poppins cursor-pointer`}
+            onClick={() => {
+              setToggle(false);
+              setActive(nav.title);
+            }}
+          >
+            <a href={`#${nav.id}`} className="block w-full text-center">
+              {nav.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
+
+
       </div>
     </nav>
   );
