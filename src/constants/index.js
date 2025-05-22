@@ -25,7 +25,7 @@ oneHealth,
 BurgularSystem,
 beqala,
 elGounaLuxury,
-
+DevaEducation,
 
   coverhunt,
   kelhel,
@@ -308,7 +308,32 @@ const projects = [
     repo: 'https://github.com/hatemelArbay/theBeqala',
     demo: 'https://vimeo.com/961284411?share=copy',
   },
-  
+    {
+  id: "project-6",
+  name: "Deva Education",
+  description: "Deva Education is a platform that helps international students apply to Turkish universities . It includes an AI chatbot powered by the OpenAI API and an admin dashboard for managing content and inquiries.Tech Stack: NextJs,MongoDB, Express, Node.js ",
+  tags: [
+    {
+      name: "nextjs",
+      color: "blue-text-gradient"
+    },
+    {
+      name: "nodejs",
+      color: "green-text-gradient"
+    },
+    {
+      name: "express",
+      color: "pink-text-gradient"
+    },
+    {
+      name: "mongodb",
+      color: "orange-text-gradient"
+    }
+  ],
+  image: DevaEducation,
+  repo: null,
+  demo: "https://studyinturkeydeva.com"
+}
   
 
 
@@ -343,6 +368,8 @@ const projects2=[
     repo: 'https://github.com/hatemelArbay/theBeqala',
     demo: 'https://vimeo.com/961284411?share=copy',
   },
+
+
 ];
 
 export { services, technologies, experiences, projects,projects2 };

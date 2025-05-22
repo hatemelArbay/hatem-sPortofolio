@@ -56,6 +56,7 @@ import oneHealth from './projects/oneHealth.png';
 import BurgularSystem from './projects/burgularsystem.png'; 
 import beqala from './projects/beqala.png'; 
 import elGounaLuxury from './projects/elGounaLuxury.png'; 
+import DevaEducation from './projects/DevaEducation.png'
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -63,6 +64,7 @@ import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+
 
 export {
   bwmap,
@@ -107,6 +109,7 @@ export {
   BurgularSystem,
   beqala,
   elGounaLuxury,
+  DevaEducation,
   
   git,
   html,
