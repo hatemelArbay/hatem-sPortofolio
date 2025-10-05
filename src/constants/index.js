@@ -27,9 +27,14 @@ beqala,
 elGounaLuxury,
 DevaEducation,
 
+KgDome,
+ibta,
+mozaabire,
+
   coverhunt,
   kelhel,
   microverse,
+  sertak,
 } from '../assets';
 
 export const navLinks = [
@@ -174,7 +179,7 @@ const experiences = [
 
 const projects = [
   {
-    id: 'project-6',
+    id: 'project-1',
     name: 'GonaLuxury',
     description:
       'I developed the El Gouna Luxury Real Estate website using the MERN stack (MongoDB, Express, React, Node.js). The platform enables users to book appointments for renting or purchasing properties in El Gouna and includes an admin dashboard for efficient management.',
@@ -197,7 +202,7 @@ const projects = [
     demo: 'https://luxuryelgounarealestate.com/',
   },
   {
-    id: 'project-1',
+    id: 'project-2',
     name: 'Sobhy Saied',
     description: 'I developed a dynamic and user-friendly website for Sobhy Said Company, highlighting their extensive range of products and services. ',
     tags: [
@@ -219,7 +224,7 @@ const projects = [
     demo: 'https://hatemelarbay.github.io/sobhySaidFinalVersion/',
   },
   {
-    id: 'project-2',
+    id: 'project-3',
     name: 'Araby Tour',
     description:
       'I designed and developed the Araby Tour website for the Araby Tour Company, providing an engaging and seamless experience for travelers. The site features detailed tour packages, stunning destination galleries, and easy booking options.',
@@ -242,7 +247,7 @@ const projects = [
     demo: 'https://hatemelarbay.github.io/arabytour/',
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'One Health',
     description: 'The Clinic Management System is a comprehensive web application designed to streamline clinic operations and enhance patient experience. It provides essential functionalities for both patients and doctors, integrating various technologies to improve efficiency and security.',
     tags: [
@@ -264,7 +269,7 @@ const projects = [
     demo: 'https://vimeo.com/960485383?share=copy',
   },
   {
-    id: 'project-4',
+    id: 'project-5',
     name: 'Burgular system',
     description: `This Java-based burglar alarm system employs multi-threading to continuously monitor for intrusions and power state issues. It alerts the police if an intruder is detected and automatically calls a technician for any power problems, ensuring both security and operational reliability.`,
     tags: [
@@ -286,7 +291,7 @@ const projects = [
     demo: 'https://vimeo.com/960578881?share=copy',
   },
   {
-    id: 'project-5',
+    id: 'project-6',
     name: 'The Beqala',
     description:
       'The Beqala is an e-commerce website designed for a supermarket, developed using PHP. It allows users to browse products, add items to their cart, and complete purchases online.',
@@ -309,7 +314,7 @@ const projects = [
     demo: 'https://vimeo.com/961284411?share=copy',
   },
     {
-  id: "project-6",
+  id: "project-7",
   name: "Deva Education",
   description: "Deva Education is a platform that helps international students apply to Turkish universities . It includes an AI chatbot powered by the OpenAI API and an admin dashboard for managing content and inquiries.Tech Stack: NextJs,MongoDB, Express, Node.js ",
   tags: [
@@ -333,7 +338,30 @@ const projects = [
   image: DevaEducation,
   repo: null,
   demo: "https://studyinturkeydeva.com"
-}
+},
+  {
+    id: 'project-8',
+    name: 'Sertak',
+    description:
+      'A full-stack CV/resume platform built with Next.js, Express, and MongoDB, featuring both a user-friendly website and a powerful admin dashboard for managing templates, users, and content.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: sertak,
+    repo: 'https://github.com/hatemelArbay/theBeqala',
+    demo: 'https://seratak.netlify.app',
+  },
   
 
 
@@ -342,6 +370,49 @@ const projects = [
 
   
   
+];
+const wpProjects=[
+    {
+    id: 'project-1',
+    name: 'KgDome',
+    description:
+      'I designed and developed the KG-Dome bilingual amusement park website using WordPress and Elementor, focusing on delivering a fun and visually engaging experience that is fully responsive, user-friendly, and easy to manage.',
+    // tags: [
+    //   {
+    //     name: 'nextjs',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'supabase',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'css',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+    image: KgDome,
+  
+    demo: 'https://kgdome.com/',
+  },
+      {
+    id: 'project-2',
+    name: 'IBTA MEA',
+    description:
+      'I developed the IBTA MEA educational website using WordPress and Elementor, where students can explore available courses, access their dashboard to view provided files and instructions, and securely verify their certificates. The platform is responsive, professional, and designed to enhance the student learning experience.',
+  
+    image: ibta,
+  
+    demo: 'https://ibta.bitoven.site/',
+  },
+ {
+    id: 'project-3',
+    name: 'Mozaabi',
+    description:
+     'I developed the Mozaabi Real Estate website using WordPress and Elementor, where users can explore available properties, book appointments, and manage their own dashboards. The platform also includes an admin dashboard for managing listings and users, ensuring a smooth and professional real estate experience.',
+    image: mozaabire,
+    demo: 'https://mozaabire.bitoven.site/',
+  },
 ];
 const projects2=[
 
@@ -367,9 +438,10 @@ const projects2=[
     image: beqala,
     repo: 'https://github.com/hatemelArbay/theBeqala',
     demo: 'https://vimeo.com/961284411?share=copy',
-  },
+  }
+  
 
 
 ];
 
-export { services, technologies, experiences, projects,projects2 };
+export { services, technologies, experiences, projects,projects2 ,wpProjects};

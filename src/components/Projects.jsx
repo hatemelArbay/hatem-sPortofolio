@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { github, pineapple, pineappleHover } from '../assets';
-import { projects,projects2 } from '../constants';
+import { projects,wpProjects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
-
+import WpProjectCard from './wpProjectsCard';
 const ProjectCard = ({
   id,
   name,
@@ -80,24 +80,25 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [active, setActive] = useState('project-2');
+  const [active, setActive] = useState('project-1');
 
   return (
     <div>
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Case Studies</p>
-        <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Native Projects</h2>
       </motion.div>
 
       <div className="w-full flex flex-wrap gap-5">
         <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
+    These projects highlight my hands-on experience with native coding, showcasing practical solutions I’ve developed from scratch. They include detailed descriptions, live demos, and code repositories that reflect my ability to solve complex problems, work across different technologies, and build robust, real-world applications.
         </motion.p>
       </div>
 
     </div>
     <div>
+        {/* <div className="-mb-[6rem]"> */}
     <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -115,9 +116,33 @@ const Projects = () => {
 
 
       </motion.div>
+      {/* </div> */}
       </div>
+      <div className="-mt-[-6rem]">
+       <motion.div variants={textVariant()}>
+        <h4 className={`${styles.sectionHeadTextLight}`}>Wordpress projects</h4>
+          <div className="w-full flex flex-wrap gap-5">
+        <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+        These projects showcase my expertise in building professional and user-friendly websites using WordPress and Elementor. They demonstrate my ability to design responsive layouts, create customized features, and deliver scalable solutions tailored to client needs.        </motion.p>
+      
+      </div>
+      </motion.div>
+      </div>
+   <motion.div
+  variants={staggerContainer}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.25 }}
+  className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pt-5"
+>
+  {wpProjects.map((project, index) => (
+    <WpProjectCard key={project.id} index={index} {...project} active={active} handleClick={setActive} />
+  ))}
+</motion.div>
+
     </div>
   );
 };
+
 
 export default SectionWrapper(Projects, 'projects');

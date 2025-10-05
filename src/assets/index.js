@@ -57,6 +57,11 @@ import BurgularSystem from './projects/burgularsystem.png';
 import beqala from './projects/beqala.png'; 
 import elGounaLuxury from './projects/elGounaLuxury.png'; 
 import DevaEducation from './projects/DevaEducation.png'
+import sertak from './projects/sertak.png';
+
+import KgDome from './projects/KgDome.png';
+import ibta from './projects/ibta.png';
+import mozaabire from './projects/mozaabire.png';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -64,6 +69,7 @@ import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+
 
 
 export {
@@ -110,7 +116,12 @@ export {
   beqala,
   elGounaLuxury,
   DevaEducation,
+  sertak,
   
+  KgDome,
+  ibta,
+  mozaabire,
+
   git,
   html,
   javascript,
