@@ -27,7 +27,7 @@ beqala,
 elGounaLuxury,
 DevaEducation,
 
-KgDome,
+kgdom,
 ibta,
 mozaabire,
 ertah,
@@ -384,7 +384,7 @@ const wpProjects = [
     name: 'KgDome',
     description:
       'I designed and developed the KG-Dome bilingual amusement park website using WordPress and Elementor, focusing on delivering a fun and visually engaging experience that is fully responsive, user-friendly, and easy to manage.',
-    image: KgDome,
+    image: kgdom,
     demo: 'https://kgdome.com/',
   },
   {
