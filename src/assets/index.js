@@ -59,7 +59,7 @@ import elGounaLuxury from './projects/elGounaLuxury.png';
 import DevaEducation from './projects/DevaEducation.png'
 import sertak from './projects/sertak.png';
 
-import KgDome from './projects/KgDome.png';
+import kgdom from './projects/kgdom.png';
 import ibta from './projects/ibta.png';
 import mozaabire from './projects/mozaabire.png';
 import skyCrest from './projects/skyCrest.png';
@@ -122,7 +122,7 @@ export {
   DevaEducation,
   sertak,
   
-  KgDome,
+  kgdom,
   ibta,
   mozaabire,
   ertah,
