@@ -30,11 +30,16 @@ DevaEducation,
 KgDome,
 ibta,
 mozaabire,
+ertah,
+aks,
+skyCrest,
+ucs,
 
   coverhunt,
   kelhel,
   microverse,
   sertak,
+
 } from '../assets';
 
 export const navLinks = [
@@ -371,45 +376,62 @@ const projects = [
   
   
 ];
-const wpProjects=[
-    {
+
+
+const wpProjects = [
+  {
     id: 'project-1',
     name: 'KgDome',
     description:
       'I designed and developed the KG-Dome bilingual amusement park website using WordPress and Elementor, focusing on delivering a fun and visually engaging experience that is fully responsive, user-friendly, and easy to manage.',
-    // tags: [
-    //   {
-    //     name: 'nextjs',
-    //     color: 'blue-text-gradient',
-    //   },
-    //   {
-    //     name: 'supabase',
-    //     color: 'green-text-gradient',
-    //   },
-    //   {
-    //     name: 'css',
-    //     color: 'pink-text-gradient',
-    //   },
-    // ],
     image: KgDome,
-  
     demo: 'https://kgdome.com/',
   },
-      {
+  {
     id: 'project-2',
+    name: 'ERTAH',
+    description:
+      'I designed and developed the ERTAH corporate website using WordPress and Elementor, focusing on presenting the organization’s services in a clean, professional, and modern layout while ensuring a fully responsive user experience.',
+    image: ertah,
+    demo: 'https://ertah.smart-media.agency',
+  },
+  {
+    id: 'project-3',
+    name: 'USC Global',
+    description:
+      'I developed the USC Global website using WordPress, creating a professional platform that showcases the company’s consulting services with clear structure, organized content, and a user-friendly interface.',
+    image: ucs,
+    demo: 'https://usc-global.com',
+  },
+  {
+    id: 'project-4',
+    name: 'AKS',
+    description:
+      'I designed the AKS corporate website using WordPress and Elementor, delivering a modern and responsive layout that clearly presents the company’s services and brand identity.',
+    image: aks,
+    demo: 'http://aks.smart-media.agency',
+  },
+  {
+    id: 'project-5',
+    name: 'SkyCrest KSA',
+    description:
+      'I developed the SkyCrest KSA website using WordPress, creating a responsive and professional platform that highlights the company’s services and projects.',
+    image: skyCrest,
+    demo: 'http://skycrestksa.com',
+  },
+  {
+    id: 'project-6',
     name: 'IBTA MEA',
     description:
-      'I developed the IBTA MEA educational website using WordPress and Elementor, where students can explore available courses, access their dashboard to view provided files and instructions, and securely verify their certificates. The platform is responsive, professional, and designed to enhance the student learning experience.',
-  
+      'I developed the IBTA MEA educational website using WordPress and Elementor, where students can explore courses, access dashboards, download materials, and verify their certificates through a responsive and professional platform.',
     image: ibta,
-  
     demo: 'https://ibta.bitoven.site/',
   },
- {
-    id: 'project-3',
+  {
+    id: 'project-7',
     name: 'Mozaabi',
     description:
-     'I developed the Mozaabi Real Estate website using WordPress and Elementor, where users can explore available properties, book appointments, and manage their own dashboards. The platform also includes an admin dashboard for managing listings and users, ensuring a smooth and professional real estate experience.',
+      'I developed the Mozaabi Real Estate website using WordPress and Elementor, allowing users to explore properties, book appointments, and manage dashboards, with an admin panel for managing listings and users.',
     image: mozaabire,
     demo: 'https://mozaabire.bitoven.site/',
   },
@@ -417,7 +439,7 @@ const wpProjects=[
 const projects2=[
 
   {
-    id: 'project-6',
+    id: 'project-8',
     name: 'The Beqala',
     description:
       'The Beqala is an e-commerce website designed for a supermarket, developed using PHP. It allows users to browse products, add items to their cart, and complete purchases online.',

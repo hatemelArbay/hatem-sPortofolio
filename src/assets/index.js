@@ -62,6 +62,10 @@ import sertak from './projects/sertak.png';
 import KgDome from './projects/KgDome.png';
 import ibta from './projects/ibta.png';
 import mozaabire from './projects/mozaabire.png';
+import skyCrest from './projects/skyCrest.png';
+import ertah from "./projects/ertah.png";
+import ucs from "./projects/ucs.png"
+import aks from "./projects/aks.png"
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -121,6 +125,10 @@ export {
   KgDome,
   ibta,
   mozaabire,
+  ertah,
+  skyCrest,
+  aks,
+  ucs,
 
   git,
   html,
